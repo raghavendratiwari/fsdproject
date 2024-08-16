@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SicKKicks</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .sneaker {
+            border: 1px solid #333333;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+            text-align: center;
+            width: 30%;
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+        .sneaker img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .sneaker h2 {
+            margin: 15px 0;
+        }
+        .sneaker a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+        .sneaker a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #1f1f1f;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        
+        #sneaker1 {
+            animation-delay: 0.2s;
+        }
+        #sneaker2 {
+            animation-delay: 0.4s;
+        }
+        #sneaker3 {
+            animation-delay: 0.6s;
+        }
+        #sneaker4 {
+            animation-delay: 0.8s;
+        }
+        #sneaker5 {
+            animation-delay: 1s;
+        }
+        #sneaker6 {
+            animation-delay: 1.2s;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to SicKKicks</h1>
+        <p>A sneakerhead's heaven</p>
+        <li>Hey everyone, I am Raghavendra Tiwari and this is my sneaker reselling platform, if you are interested in any of the shoes DM asap!</li>
+    </header>
+    <nav>
+        <a href="#sneaker1">Air Jordan 1 Low</a>
+        <a href="#sneaker2">Jumpman MVP</a>
+        <a href="#sneaker3">Air Jordan 1 Low SE</a>
+        <a href="#sneaker4">Nike Dunk Low Retro</a>
+        <a href="#sneaker5">Air Max 90</a>
+        <a href="#sneaker6">Blazer Mid '77</a>
+    </nav>
+    <div class="container">
+        <div class="sneaker" id="sneaker1">
+            <img src="sneaker1.jpg" alt="Sneaker 1">
+            <h2>Air Jordan 1 Low FlyEase</h2>
+            <p>Everything you love about the classic design—premium leather, Air cushioning and the iconic Wings logo.</p>
+            <a href="https://www.nike.com/in/t/air-jordan-1-low-flyease-easy-on-off-shoes-SsT4HK/DM1206-071" target="_blank">Buy Now</a>
+        </div>
+        <div class="sneaker" id="sneaker2">
+            <img src="sneaker2.jpg" alt="Sneaker 2">
+            <h2>Jumpman MVP</h2>
+            <p>With leather, textile and nubuck details, these sneakers honor one legacy while encouraging you to cement your own.</p>
+            <a href="https://www.nike.com/in/t/jumpman-mvp-shoes-JV1HCs/DZ4475-101" target="_blank">Buy Now</a>
+        </div>
+        <div class="sneaker" id="sneaker3">
+            <img src="sneaker3.png" alt="Sneaker 3">
+            <h2>Air Jordan 1 Low SE</h2>
+            <p>Refresh your favorite kicks with a denim Swoosh logo and cool color-blocking.</p>
+            <a href="https://www.nike.com/in/t/air-jordan-1-low-se-shoes-ZbxSRp/FZ5042-041" target="_blank">Buy Now</a>
+        </div>
+        <div class="sneaker" id="sneaker4">
+            <img src="sneaker4.png" alt="Sneaker 4">
+            <h2>Nike Dunk Low Retro</h2>
+            <p>Dunks with an unmatched range of colourways to complement your every look.</p>
+            <a href="https://www.nike.com/in/t/dunk-low-retro-se-shoes-3Wwfvb" target="_blank">Buy Now</a>
+        </div>
+        <div class="sneaker" id="sneaker5">
+            <img src="sneaker5.png" alt="Sneaker 5">
+            <h2>Air Max 90</h2>
+            <p>Lace up and feel the legacy in a champion running shoe that helped define the '90s.</p>
+            <a href="https://www.nike.com/in/t/air-max-90-shoes-98F148/FN6958-100" target="_blank">Buy Now</a>
+        </div>
+        <div class="sneaker" id="sneaker6">
+            <img src="sneaker6.png" alt="Sneaker 6">
+            <h2>Blazer Mid '77</h2>
+            <p>The Nike Blazer Mid '77 Vintage—classic since the beginning.</p>
+            <a href="https://www.nike.com/in/t/blazer-mid-77-vintage-shoes-dNWPTj/BQ6806-128" target="_blank">Buy Now</a>
+        </div>
+    </div>
+    <footer>
+       &copy; 2024 SicKKicks. All rights reserved.
+    </footer>
+</body>
+</html>
